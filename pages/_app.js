@@ -1,7 +1,26 @@
-import '../styles/globals.css'
+//3rd parties
+import Head from 'next/head';
+import PropTypes from 'prop-types';
+//styles
+import GlobalStyle from '../components/GlobalStyle/styles';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+function App({ Component, pageProps }) {
+  return (
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+      </Head>
 
-export default MyApp
+      <GlobalStyle />
+
+      <Component {...pageProps} />
+    </>
+  );
+};
+
+App.proptypes = {
+  Component : PropTypes.elementType.isRequired,
+  pageProps: PropTypes.shape({}).isRequired,
+};
+
+export default App;
