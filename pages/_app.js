@@ -1,7 +1,7 @@
-//3rd parties
+// 3rd parties
 import Head from 'next/head';
 import PropTypes from 'prop-types';
-//styles
+// styles
 import GlobalStyle from '../components/GlobalStyle/styles';
 
 function App({ Component, pageProps }) {
@@ -16,10 +16,10 @@ function App({ Component, pageProps }) {
       <Component {...pageProps} />
     </>
   );
-};
+}
 
-App.proptypes = {
-  Component : PropTypes.elementType.isRequired,
+App.propTypes = {
+  Component: PropTypes.elementType.isRequired,
   pageProps: PropTypes.shape({}).isRequired,
 };
 
