@@ -23,5 +23,13 @@
     "react/jsx-props-no-spreading": "off",
     "react/react-in-jsx-scope": "off"
   },
-  "ignorePatterns": ["out"]
+  "ignorePatterns": ["out"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js"],
+        "paths": ["."]
+      }
+    }
+  }
 }
