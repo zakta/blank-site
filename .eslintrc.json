@@ -4,6 +4,14 @@
     "plugin:react/recommended",
     "airbnb"
   ],
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "extensions": [".js"],
+        "map": [ ["@", "."] ]
+      }
+    }
+  },
   "env": {
     "browser": true,
     "es2021": true
@@ -23,13 +31,5 @@
     "react/jsx-props-no-spreading": "off",
     "react/react-in-jsx-scope": "off"
   },
-  "ignorePatterns": ["out"],
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "extensions": [".js"],
-        "paths": ["."]
-      }
-    }
-  }
+  "ignorePatterns": ["out"]
 }

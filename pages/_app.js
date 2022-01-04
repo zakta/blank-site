@@ -1,6 +1,7 @@
 // 3rd parties
 import Head from 'next/head';
 import PropTypes from 'prop-types';
+
 // styles
 import GlobalStyle from '@/components/GlobalStyle/styles';
 
