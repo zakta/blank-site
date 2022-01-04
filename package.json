@@ -1,6 +1,10 @@
 {
   "name": "blank-site",
   "private": true,
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">=1.22.17"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
