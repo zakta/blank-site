@@ -4,6 +4,14 @@
     "plugin:react/recommended",
     "airbnb"
   ],
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "extensions": [".js"],
+        "map": [ ["@", "."] ]
+      }
+    }
+  },
   "env": {
     "browser": true,
     "es2021": true
