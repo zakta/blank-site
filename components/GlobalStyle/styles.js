@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background: white;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -15,9 +16,7 @@ const GlobalStyle = createGlobalStyle`
 
     h2 {
       font-size: 40px;
-      color: #1a3968;
       margin: 0;
-      text-transform: uppercase;
       margin: 0;
       line-height: 50px;
     }
