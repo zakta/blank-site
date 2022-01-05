@@ -1,3 +1,4 @@
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 import Head from 'next/head';
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h2>Oi</h2>
+      <GoogleAnalytics />
     </div>
   );
 }
