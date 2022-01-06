@@ -1,3 +1,6 @@
 {
-  "*.js": "yarn lint"
+  "**/*.js": [
+    "eslint",
+    "git add --all"
+  ]
 }

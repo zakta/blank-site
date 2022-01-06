@@ -10,5 +10,6 @@ export default function Home() {
       </Head>
       <h2>Oi</h2>
     </div>
-  );
+  )
+
 }
