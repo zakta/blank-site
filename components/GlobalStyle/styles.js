@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
       margin: 0;
       line-height: 50px;
     }
+
   }
 `;
 
