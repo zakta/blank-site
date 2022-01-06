@@ -7,7 +7,7 @@ import { Btn, Container, ModalAria } from './styles';
 const Modal = function ModalComponent({ activeModal, setActiveModal }) {
   return (
     activeModal
-      ? (
+      && (
         <Container>
           <ModalAria
             isOpen={activeModal}
@@ -29,8 +29,9 @@ const Modal = function ModalComponent({ activeModal, setActiveModal }) {
           </ModalAria>
         </Container>
       )
-      : false);
+  );
 };
+
 Modal.propTypes = {
   activeModal: PropTypes.bool.isRequired,
   setActiveModal: PropTypes.func.isRequired,

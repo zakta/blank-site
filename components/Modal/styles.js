@@ -1,21 +1,21 @@
 // 3rd parties
-import styled from 'styled-components';
 import Modal from 'react-modal';
+import styled from 'styled-components';
 
 export const Container = styled.div`
 `;
 
 export const ModalAria = styled(Modal)`
-    &.modalStyles{
+  &.modalStyles {
     background: #ccc;
     margin: 1rem auto;
     width: 399px;
     padding: 1rem;
   }
-    .container{
-      display: flex;
-      flex-direction: column;
-    }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 export const Btn = styled.button`
   background: white;
