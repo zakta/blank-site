@@ -2,10 +2,11 @@
 import { useFormik } from 'formik';
 
 // styles
-import Validation from '../Validation';
+
 import {
   Container, BtnSubmit, Form, Inputform, Textarea,
 } from './styles';
+import Validation from './validation';
 
 const FormContact = function Formpage() {
   const formik = useFormik(Validation);
