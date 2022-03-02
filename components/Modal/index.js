@@ -10,6 +10,7 @@ const Modal = function ModalComponent({ activeModal, setActiveModal }) {
       && (
         <Container>
           <ModalAria
+            ariaHideApp={false}
             isOpen={activeModal}
             onRequestClose={() => setActiveModal(false)}
             contentLabel="Example Modal"
