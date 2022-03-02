@@ -21,6 +21,6 @@ export const Btn = styled.button`
   background: white;
   font-weight: 300;
   border:1px solid #c6c6c6;
-  align-self: flex-end;
   padding: .5rem;
+  align-self: flex-end;
 `;
