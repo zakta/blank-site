@@ -1,3 +1,4 @@
+import ContainerCenter from '@/components/ContainerCenter/styles';
 import Head from 'next/head';
 import Header from '../components/Header';
 
@@ -9,7 +10,9 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <h2>About</h2>
+      <ContainerCenter>
+        <h2>About</h2>
+      </ContainerCenter>
     </>
   );
 }

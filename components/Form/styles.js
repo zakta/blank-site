@@ -3,12 +3,6 @@ import InputMask from 'react-input-mask';
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  max-width: 1200px;
-  margin: 2rem;
-
-  @media(min-width: 1200px){
-    margin: auto;
-  }
   .errorMsg{
     color: #e92929;
     font-weight: 400;

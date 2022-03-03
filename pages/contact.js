@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Form from '@/components/Form';
 import Header from '@/components/Header';
+import ContainerCenter from '@/components/ContainerCenter/styles';
 
 export default function Contact() {
   return (
@@ -11,8 +12,10 @@ export default function Contact() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <h2>Contact</h2>
-      <Form />
+      <ContainerCenter>
+        <h2>Contact</h2>
+        <Form />
+      </ContainerCenter>
     </>
   );
 }

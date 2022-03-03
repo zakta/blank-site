@@ -16,8 +16,7 @@ const GlobalStyle = createGlobalStyle`
 
     h2 {
       font-size: 40px;
-      margin: 0;
-      margin: 2rem;
+      margin: 1.5rem 0;
       line-height: 50px;
     }
 
