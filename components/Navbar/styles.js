@@ -3,9 +3,13 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   justify-content: flex-end;
+  max-width: 1200px;
 
   @media(min-width: 900px){
-    max-width: 900px;
+    margin: 2rem;
+  }
+  @media(min-width: 1200px){
+    margin: 2rem auto;
   }
   `;
 
@@ -30,7 +34,7 @@ export const NavBar = styled.ul`
     transform: initial;
     background: none;
     margin: 0;
-    padding: 2rem;
+    padding: 0;
     width: initial;
     top: initial;
     right: initial;
@@ -47,14 +51,13 @@ export const Item = styled.li`
 
   a {
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: black;
     font-weight: 700;
     font-size: 25px;
 
     @media(min-width: 900px){
-      font-size: 18px;
-      font-weight: 500;
+      font-size: 20px;
     }
   }
 

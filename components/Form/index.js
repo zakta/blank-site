@@ -13,7 +13,6 @@ const FormContact = function Formpage() {
 
   return (
     <Container>
-      <h2>Contato</h2>
       <Form onSubmit={formik.handleSubmit}>
         <Inputform
           name="name"

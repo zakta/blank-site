@@ -8,23 +8,23 @@ export default function Navbar() {
   return (
     <Container>
       <NavBar open={open}>
-        <Item>
+        <Item onClick={() => setOpen(!open)}>
           <Link href="/">
             Home
           </Link>
         </Item>
-        <Item>
-          <Link href="/">
+        <Item onClick={() => setOpen(!open)}>
+          <Link href="/services">
             Services
           </Link>
         </Item>
-        <Item>
-          <Link href="/">
+        <Item onClick={() => setOpen(!open)}>
+          <Link href="/about">
             About
           </Link>
         </Item>
-        <Item>
-          <Link href="/">
+        <Item onClick={() => setOpen(!open)}>
+          <Link href="/contact">
             Contact
           </Link>
         </Item>
