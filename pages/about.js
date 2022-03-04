@@ -1,4 +1,5 @@
 import ContainerCenter from '@/components/ContainerCenter/styles';
+import Footer from '@/components/Footer';
 import Head from 'next/head';
 import Header from '../components/Header';
 
@@ -13,6 +14,7 @@ export default function About() {
       <ContainerCenter>
         <h2>About</h2>
       </ContainerCenter>
+      <Footer />
     </>
   );
 }

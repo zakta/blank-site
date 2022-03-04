@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Form from '@/components/Form';
 import Header from '@/components/Header';
 import ContainerCenter from '@/components/ContainerCenter/styles';
+import Footer from '@/components/Footer';
 
 export default function Contact() {
   return (
@@ -16,6 +17,7 @@ export default function Contact() {
         <h2>Contact</h2>
         <Form />
       </ContainerCenter>
+      <Footer />
     </>
   );
 }

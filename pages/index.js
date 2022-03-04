@@ -1,4 +1,5 @@
 import ContainerCenter from '@/components/ContainerCenter/styles';
+import Footer from '@/components/Footer';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import Navbar from '@/components/Navbar';
 import Head from 'next/head';
@@ -14,6 +15,7 @@ export default function Home() {
       <ContainerCenter>
         <h2>Home</h2>
       </ContainerCenter>
+      <Footer />
       <GoogleAnalytics />
     </div>
   );
