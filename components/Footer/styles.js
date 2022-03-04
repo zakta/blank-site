@@ -18,7 +18,6 @@ export const Infos = styled.ul`
 
   @media(min-width: 900px){
     flex-direction: row;
-    justify-content: flex-end;
   }
   `;
 
