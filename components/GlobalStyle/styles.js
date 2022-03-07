@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     overflow-x: hidden;
     min-width: 320px;
+    background: #f7f7f7;
 
     h2 {
       font-size: 40px;

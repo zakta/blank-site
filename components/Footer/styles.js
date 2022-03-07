@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   background: #efefef;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 
   .footer{
     margin-bottom: 0;

@@ -1,5 +1,6 @@
 // 3rd parties
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import Media from 'react-media';
 // components
 import Modal from '../Modal';
@@ -7,7 +8,7 @@ import ModalMobile from '../ModalMobile';
 // styles
 import { Btn } from '../Modal/styles';
 
-export default function ModalResponsive() {
+export default function ModalResponsive({ children }) {
   const [activeModal, setActiveModal] = useState(false);
   const [open, setOpen] = useState(false);
   return (
@@ -19,7 +20,9 @@ export default function ModalResponsive() {
             && (
             <>
               <Btn type="button" onClick={() => setOpen(true)}>Abrir Mobile</Btn>
-              <ModalMobile activeModal={open} setActiveModal={setOpen} />
+              <ModalMobile activeModal={open} setActiveModal={setOpen}>
+                {children}
+              </ModalMobile>
             </>
             )}
             {matches.medium
@@ -30,7 +33,9 @@ export default function ModalResponsive() {
                 activeModal={activeModal}
                 setActiveModal={setActiveModal}
                 ariaHideApp={false}
-              />
+              >
+                {children}
+              </Modal>
             </>
             )}
           </>
@@ -39,3 +44,6 @@ export default function ModalResponsive() {
     </div>
   );
 }
+ModalResponsive.propTypes = {
+  children: PropTypes.node.isRequired,
+};

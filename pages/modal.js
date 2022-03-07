@@ -1,7 +1,7 @@
 // 3rd parties
 import Head from 'next/head';
 // components
-import ModalResponsive from '@/components/modalResponsive';
+import ModalResponsive from '@/components/ModalResponsive';
 
 export default function Home() {
   return (

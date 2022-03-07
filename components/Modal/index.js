@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 // styles
 import { Btn, Container, ModalAria } from './styles';
 
-const Modal = function ModalComponent({ activeModal, setActiveModal }) {
+const Modal = function ModalComponent({ activeModal, setActiveModal, children }) {
   return (
     activeModal
       && (
@@ -17,9 +17,7 @@ const Modal = function ModalComponent({ activeModal, setActiveModal }) {
             className="modalStyles"
           >
             <div className="container">
-              <p>
-                Modal Funcionando.
-              </p>
+              {children}
               <Btn
                 type="button"
                 onClick={() => setActiveModal(false)}
@@ -36,5 +34,6 @@ const Modal = function ModalComponent({ activeModal, setActiveModal }) {
 Modal.propTypes = {
   activeModal: PropTypes.bool.isRequired,
   setActiveModal: PropTypes.func.isRequired,
+  children: PropTypes.node.isRequired,
 };
 export default Modal;
