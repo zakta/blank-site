@@ -1,3 +1,5 @@
+// Components
+import Breadcrumb from '@/components/Breadcrumb';
 import ContainerCenter from '@/components/ContainerCenter/styles';
 import Footer from '@/components/Footer';
 import Head from 'next/head';
@@ -12,6 +14,14 @@ export default function About() {
       </Head>
       <Header />
       <ContainerCenter>
+        <Breadcrumb>
+          <Breadcrumb.Link href="/">
+            Home
+          </Breadcrumb.Link>
+          <Breadcrumb.Item>
+            About
+          </Breadcrumb.Item>
+        </Breadcrumb>
         <h2>About</h2>
       </ContainerCenter>
       <Footer />

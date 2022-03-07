@@ -1,7 +1,10 @@
+// 3rd parties
 import Head from 'next/head';
+// Components
+import Breadcrumb from '@/components/Breadcrumb';
+import ContainerCenter from '@/components/ContainerCenter/styles';
 import Form from '@/components/Form';
 import Header from '@/components/Header';
-import ContainerCenter from '@/components/ContainerCenter/styles';
 import Footer from '@/components/Footer';
 
 export default function Contact() {
@@ -14,6 +17,14 @@ export default function Contact() {
       </Head>
       <Header />
       <ContainerCenter>
+        <Breadcrumb>
+          <Breadcrumb.Link href="/">
+            Home
+          </Breadcrumb.Link>
+          <Breadcrumb.Item>
+            Contact
+          </Breadcrumb.Item>
+        </Breadcrumb>
         <h2>Contact</h2>
         <Form />
       </ContainerCenter>
